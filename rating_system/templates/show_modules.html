@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moduls</title>
+</head>
+<body>
+<div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Semester</th>
+                <th>Taught by</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for line in moudle_list %}
+                <tr>
+                    <td>{{line.code}}}</td>
+                    <td>{{line.name}}}</td>
+                    <td>{{line.year}}}</td>
+                    <td>{{line.semester}}}</td>
+                    <td>{{line.taughtBy}}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
